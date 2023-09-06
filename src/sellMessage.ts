@@ -8,10 +8,15 @@ const AuctionV3R2Code = Cell.fromBoc(TonWeb.utils.base64ToBytes('te6cckECHAEABZc
 const FixPriceV3R2Code = Cell.fromBoc(TonWeb.utils.base64ToBytes('te6cckECCwEAArkAART/APSkE/S88sgLAQIBIAIDAgFIBAUAfvIw7UTQ0wDTH/pA+kD6QPoA1NMAMMABjh34AHAHyMsAFssfUATPFljPFgHPFgH6AszLAMntVOBfB4IA//7y8AICzQYHAFegOFnaiaGmAaY/9IH0gfSB9AGppgBgYaH0gfQB9IH0AGEEIIySsKAVgAKrAQH30A6GmBgLjYSS+CcH0gGHaiaGmAaY/9IH0gfSB9AGppgBgYOCmE44BgAEqYhOmPhW8Q4YBKGATpn8cIxbMbC3MbK2QV44LJOZlvKAVxFWAAyS+G8BJrpOEBFcCBFd0VYACRWdjYKdxjgthOjq+G6hhoaYPqGAD9gHAU4ADAgB92YIQO5rKAFJgoFIwvvLhwiTQ+kD6APpA+gAwU5KhIaFQh6EWoFKQcIAQyMsFUAPPFgH6AstqyXH7ACXCACXXScICsI4XUEVwgBDIywVQA88WAfoCy2rJcfsAECOSNDTiWnCAEMjLBVADzxYB+gLLaslx+wBwIIIQX8w9FIKAejy0ZSzjkIxMzk5U1LHBZJfCeBRUccF8uH0ghAFE42RFrry4fUD+kAwRlAQNFlwB8jLABbLH1AEzxZYzxYBzxYB+gLMywDJ7VTgMDcowAPjAijAAJw2NxA4R2UUQzBw8AXgCMACmFVEECQQI/AF4F8KhA/y8AkA1Dg5ghA7msoAGL7y4clTRscFUVLHBRWx8uHKcCCCEF/MPRQhgBDIywUozxYh+gLLassfFcs/J88WJ88WFMoAI/oCE8oAyYMG+wBxUGZFFQRwB8jLABbLH1AEzxZYzxYBzxYB+gLMywDJ7VQAlsjLHxPLPyPPFlADzxbKAIIJycOA+gLKAMlxgBjIywUmzxZw+gLLaszJgwb7AHFVUHAHyMsAFssfUATPFljPFgHPFgH6AszLAMntVNZeZYk='));
 
 const ContractDeployer = "EQBmSy9SfRj44LZPi84NyvI4seJlZYSz33MM0rl78DnkCb2Z";
-const ServiceFeeAddress = "EQAiybdndsGkvXphCXWLDu76jwETEKP3aTM2PBjJ7nQ_TkjB"
+const ServiceFeeAddress = "EQCjk1hh952vWaE9bRguFkAhDAL5jj3xj9p0uPWrFBq_GEMS"
 
-const ContractDeployerTestnet = "EQDThGn4NoiaXm-rmfZhhtKbppqTuwLnenhzW5jROU1ixSCy";
-const ServiceFeeAddressTestnet = "kQAAgWbO3wOQ6z-NHSvvICav6MbefILGAEpMN4F9-8TxDj6b";
+const ContractDeployerTestnet = new TonWeb.utils.Address("EQDThGn4NoiaXm-rmfZhhtKbppqTuwLnenhzW5jROU1ixSCy").toString(true, true, true, true);
+const ServiceFeeAddressTestnet = new TonWeb.utils.Address("kQAAgWbO3wOQ6z-NHSvvICav6MbefILGAEpMN4F9-8TxDj6b").toString(true, true, true, true);
+
+console.log('ServiceFeeAddressTestnet', ServiceFeeAddressTestnet);
+console.log('ServiceFeeAddress', ServiceFeeAddress);
+console.log('ContractDeployerTestnet', ContractDeployerTestnet);
+
 
 export interface SellResponse {
     address: string;
